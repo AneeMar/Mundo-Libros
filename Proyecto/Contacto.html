@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!--- Bootstrap CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+<header>
+    <header class="header">
+        <link href="contact-form.css" rel="stylesheet">
+        <div class="header-logo">
+            
+            <img src="logo.png" style="width:80px">
+            <div class="typewriter">
+                <h1>Mundo de Libros</h1>
+            </div>
+        </div>
+        
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+
+        <nav class="header-nav">
+            <ul class="nav-ul">
+                <li class="nav-list"><a href="../home.html">Home</a></li>
+                <li class="nav-list"><a href="Sobre-Nosotros.html" target="_blank">Quienes somos</a></li>
+                <li class="nav-list"><a href="Contacto.html" target="_blank"> Contacto</a></li>
+            </ul>
+        </nav>  
+    </header>
+
+</header>
+
+
+<form action="mailto:belennavarro780@gmail.com" method="post" enctype="text/plain"></form>
+<fieldset>
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contáctanos!</h3>
+<br>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+     <p> Rellene el siguiente formulario y nos pondremos en contacto con usted lo antes posible.</p>
+        <br>
+        <div class="fcf-form-group">
+            <label for="Nombre" class="fcf-label">Nombre y Apellido</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Nombre" name="Nombre" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Dirección de E-mail</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+
+            <div class="fcf-form-group">
+                <label for="Asunto" class="fcf-label">Asunto</label>
+                <div class="fcf-input-group">
+                    <input type="Asunto" id="Asunto" name="Asunto" class="fcf-form-control" required>
+                </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Mensaje" class="fcf-label">Mensaje</label>
+            <div class="fcf-input-group">
+                <textarea id="Mensaje" name="Mensaje" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+            <br>
+            <input type="radio" name="Newsletter" value="5"> Suscribirme al Newsletter
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar</button>
+            <button type="delete" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Borrar</button>
+        </div>
+
+
+    </form>
+    </div>
+
+</div>
+<div>
+    <h4>Nuestra Oficina</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5433382589927!2d-58.392806584252625!3d-34.61570736564083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccade90b723ef%3A0x726f518b085fc736!2sM%C3%A9xico%201714%2C%20C1100ACD%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sde!4v1663269922488!5m2!1ses-419!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+</div>
+</fieldset>
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Company Name</h3>
+                    <a href="#"><img class="logo" src="Fotos/mundo-de-libros.gif" width="150" height="150" align="center" ></a>
+                   
+                </section>
+                            </li>
+                    </div>
+                </div>
+               
+                <div class="col-md-6 item text">
+                    <h3>Redes sociales</h3>
+                    <ul>
+                        <li><a href="#" class="fa fa-linkedin"></a>
+                            <a href="#" class="fa fa-pinterest"></a>
+                            <a href="#" class="fa fa-reddit"></a></li>
+                        
+                    </ul>
+                    <p class="copyright">Todos los derechos reservados © 2022</p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

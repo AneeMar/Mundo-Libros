@@ -1,0 +1,418 @@
+body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px 400px auto auto auto 200px;
+}
+
+.header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.typewriter h1 {
+    color: rgb(91, 81, 81);
+    font-family: Courier;
+    font-size: 16px;
+    overflow: hidden;
+    border-right: .15em solid rgb(14, 14, 13);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(14, 14, 13)
+    }
+}
+
+#menu,
+#menu-check {
+    display: none;
+}
+
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-ul li {
+    display: inline-flex;
+    gap: 2rem;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.nav-ul li:hover {
+    background-color: rgba(34, 34, 34, 0.25);
+}
+
+.main{
+    grid-column: 1/4;
+    grid-row: 2/6;
+}
+
+.main-banner{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.slider {
+	width: 100%;
+    height: 400px;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	align-items: center;
+	
+	animation: cambio 10s infinite alternate ease-in-out;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+	height: 400px;
+
+}
+
+.slider h5{
+	top:375px; 
+	position:absolute; 
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+
+.slider p{
+	top:430px; 
+	position:absolute; 
+	font-size: 16px;
+	font-family: 'Courier New', Courier, monospace;
+    height: 16px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    padding-left: 20%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	40% {margin-left: 0;}
+	
+	45% {margin-left: -100%;}
+	75% {margin-left: -100%;}
+	
+	80% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+	
+}
+
+.main-categorias {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-categorias h2 {
+    padding-left: 20px;
+    font-family: 'Cormorant Garamond', 'Oswald', sans-serif;
+    margin: 20px;
+
+}
+
+.categoria-cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.categoria-drama,
+.categoria-comedia,
+.categoria-infantil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    font-family: 'Cormorant Garamond', 'Oswald', sans-serif;
+    font-weight: bold;
+   
+    
+}
+
+.imagen-categoria img {
+    box-shadow: 5px 9px 3px #ddd;
+    height: 260px;
+    width: 240px;
+    
+}
+
+.button-categoria {
+    border-radius: 25px;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #ece2c6;
+}
+
+.catalogo {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    padding: 20px 0 20px 0;;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 4%;
+    border: 3px
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ddd;
+    background: #fff;
+    min-height: 50px;
+} 
+
+.catalogo .h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.generoDrama {
+    gap: 30px;
+    margin: 10px 5%;
+    padding: 5px;
+}
+
+.generoDrama h1{
+    font-family: 'Cormorant Garamond', 'Oswald', sans-serif;
+}
+
+.catalogo .img-libro{
+    max-height: 100px;
+    border-radius: 3px;
+    margin: 15px;
+}
+
+
+.catalogo .descripcionLibro {
+    display: flex;
+    border: 3px;
+    text-align: justify;
+}
+
+.catalogo .btn-agregar, .carrito button{
+    border-radius: 25px;
+    width: 150px;
+    margin-top: 20px;
+    background-color: #ece2c6;
+    height: 30px;
+}
+
+.carrito {
+    grid-column: 1/4;
+    grid-row: 5/6;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .categoria-drama,
+    .categoria-comedia,
+    .categoria-infantil {
+        flex-direction: column;
+        gap: 30px;
+        margin: 10px 10%;
+        padding: 5px;
+        height: auto;
+        align-items: center;
+    }
+
+    .button-categoria {
+        margin-top: 10px;
+    }
+
+    .imagen-categoria img {
+        top: 0px;
+    }
+
+    #menu-check:not(:checked)~nav {
+        display: none;
+    }
+
+    #menu-check:checked~nav {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 10px;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+    }
+
+    #menu:hover {
+        color: #fff;
+        background: black;
+    }
+
+    #menu-cerrar {
+        display: none;
+    }
+
+    #menu-check:checked~label #menu-abrir {
+        display: none;
+    }
+
+    #menu-check:checked~label #menu-cerrar {
+        display: block;
+    }
+
+    .nav-ul {
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        height: 50%;
+        flex-direction: column;
+        z-index: 5;
+        background-color: #fff;
+    }
+
+    .categoria-cards{
+        flex-direction: column;
+    }
+    
+ 
+
+    .slider h5{
+        font-size: 16px;
+    }
+}
+.footer-dark-grid{
+    grid-column: 1/4;
+    grid-row: 7/7;
+    padding-top: 20px;
+    padding-left: 50px;
+    color:#f0f9ff;
+    background-color:#282d32;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-dark {
+    padding-top: 20px;
+    padding-left: 50px;
+    color:#f0f9ff;
+    background-color:#282d32;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .footer-dark h3 {
+    margin: top 1px;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .footer-dark ul {
+    padding: 2px;
+    list-style:none;
+    line-height:2.6;
+    font-size:14px;
+    margin-bottom:2;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-bottom: 40px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+
+@media (max-width: 380px) {
+.slider h5, .slider p{
+    font-size: 12px;
+}
+
+.typewriter h1{
+    font-size: 14px;
+}
+} 

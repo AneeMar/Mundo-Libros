@@ -1,0 +1,338 @@
+.header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.typewriter h1 {
+    color: rgb(91, 81, 81);
+    font-family: Courier;
+    font-size: 16px;
+    overflow: hidden;
+    border-right: .15em solid rgb(14, 14, 13);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(14, 14, 13)
+    }
+}
+#menu,
+#menu-check {
+    display: none;
+}
+
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-ul li {
+    display: inline-flex;
+    gap: 2rem;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.nav-ul li:hover {
+    background-color: rgba(34, 34, 34, 0.25);
+}
+#fcf-form {
+    display:block;
+}
+
+.fcf-body {
+    margin: 0;
+    font-family: -apple-system, 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #212529;
+    text-align:left;
+    background-color: #fff;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 920px;
+    border: 2px solid #ced4da;
+    border-radius: 0.25rem;
+    border-bottom-right-radius: 100;
+    max-width: 100%;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    padding-left: 5px;
+}
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: -apple-system, 'Courier New', Courier, monospace;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-credit {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #545b62;
+}
+
+.fcf-credit a {
+    color: #545b62;
+    text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: darkblue;
+    border: 1.5px solid transparent;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+
+    .fcf-btn {
+        transition: none;
+    }
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #ced4da;
+}
+
+.fcf-btn-primary:hover {
+    color: black;
+    background-color: #0000;
+    border-color: black;
+    border-radius: 5;
+    text-align: center;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: darkblue;
+    background-color: #0000;
+    border-color: #ced4da;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
+    
+}
+
+h1 {
+    padding-left: 100px;
+
+}
+h2{
+    padding-left: 100px;
+}
+p{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+line-height: 2.3;
+}
+
+    
+
+iframe {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 700px;
+
+}
+h4{
+        padding-top: 20px;
+        padding-left: 500px;
+}
+iframe{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 280px;
+}
+.footer-dark {
+    padding-top: 20px;
+    padding-left: 50px;
+    color:#f0f9ff;
+    background-color:#282d32;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .footer-dark h3 {
+    margin: top 1px;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .footer-dark ul {
+    padding: 2px;
+    list-style:none;
+    line-height:2.6;
+    font-size:14px;
+    margin-bottom:2;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+  }
+  
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-bottom: 40px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+  }
+
+    .fa {
+      font-size: 1.3rem;
+      color: white;
+
+      &:hover {
+        color: darken($dark-gray, 25%);
+        transition:color 0.3s ease-in;
+      }
+    }
+  }

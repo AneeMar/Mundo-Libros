@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo de Libros</title>
+    <link rel=StyleSheet href="home.css">
+    <script src="https://kit.fontawesome.com/0f2c2ffba8.js" crossorigin="anonymous"></script>
+     <!--- Bootstrap CSS-->
+     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+     <script src="js/jquery.min.js"></script>
+     
+     <script src="js/popper.min.js"></script>
+     
+     <script src="js/bootstrap.min.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="./logo.png" style="width:80px">
+            <div class="typewriter">
+                <h1>Mundo de Libros</h1>
+            </div>
+        </div>
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+
+        <nav class="header-nav">
+            <ul class="nav-ul">
+                <li class="nav-list"><a href="home.html">Home</a></li>
+                <li class="nav-list"><a href="catalogo.html">Catalogo</a></li>
+                <li class="nav-list"><a href="Proyecto\Sobre-Nosotros.html" target="_blank">Quienes somos</a></li>
+                <li class="nav-list"><a href="Proyecto\Contacto.html" target="_blank"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main-banner">
+            <div class="slider">
+                <ul>
+                    <li>
+                        <img src="./imagenes-banner/manolibrofinal.png" alt="">
+                        <h5 id="frase1">Un lector vive mil vidas antes de morir.</h5>
+                        <p>-George R.R. Martin</p>
+                    </li>
+                    <li>
+                        <img src="./imagenes-banner/laureles2.jpg" alt="">
+                        <h5>No se puede abrir un libro sin aprender algo.</h5>
+                        <p>-Confucio</p>
+                    </li>
+                    <li>
+                        <img src="./imagenes-banner/imagen3 - copia.png" alt="">
+                        <h5>La escritura es la pintura de la voz.</h5>
+                        <p>-Voltaire</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="main-categorias">
+            <h2>Nuestros Libros ...</h2>
+            <div class="categoria-cards">
+                <div class="categoria-drama">
+                    <div class="imagen-categoria"><img src="./imagenes de categorias/mujerfrentealibro.jpg"
+                            alt="mujer frente a un libro en la bruma"></div>
+                    <div class="texto-categoria">
+                        <h3 class="titulo-categoria">Libros de Drama</h3>
+                        <button class="button-categoria"><a href="#Drama">Ver libros</a></button>
+                    </div>
+                </div>
+
+                <div class="categoria-comedia">
+                    <div class="imagen-categoria"><img src="./imagenes de categorias/librosrisa.jpg"
+                            alt="mujeres riendo frente a un libro"></div>
+                    <div class="texto-categoria">
+                        <h3 class="titulo-categoria">Libros de Comedia</h3>
+                        <button class="button-categoria"><a href="#Comedia">Ver libros</a></button>
+                    </div>
+                </div>
+
+                <div class="categoria-infantil">
+                    <div class="imagen-categoria"><img src="./imagenes de categorias/niñoleyendo.jpg" alt="niño leyendo"></div>
+                    <div class="texto-categoria">
+                        <h3 class="titulo-categoria">Libros Infantiles</h3>
+                        <button class="button-categoria"><a href="#Infantiles">Ver libros</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+
+    </main>
+
+    <div class="footer-dark-grid">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Company Name</h3>
+                        <a href="#"><img class="logo" src="Proyecto\Fotos\mundo-de-libros.gif" width="150" height="150" align="center" ></a>
+                       
+                    </section>
+                                </li>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6 item text">
+                        <h3>Redes sociales</h3>
+                        <ul>
+                            <li><a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-pinterest"></a>
+                                <a href="#" class="fa fa-reddit"></a></li>
+                            
+                        </ul>
+                        <p class="copyright">Todos los derechos reservados © 2022</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
