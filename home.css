@@ -20,6 +20,11 @@ body {
     justify-content: flex-start;
 }
 
+.header-nav{
+    display: flex;
+    margin-right: 20px;
+}
+
 .typewriter h1 {
     color: rgb(91, 81, 81);
     font-family: Courier;
