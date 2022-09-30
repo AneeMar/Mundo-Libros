@@ -20,7 +20,7 @@ body {
     justify-content: flex-start;
 }
 
-.header-nav{
+.header-nav {
     display: flex;
     margin-right: 20px;
 }
@@ -212,7 +212,7 @@ body {
 
 .catalogo {
     grid-column: 1/4;
-    grid-row: 4/5;
+    grid-row: 2/5;
     padding: 20px 0 20px 0;;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
