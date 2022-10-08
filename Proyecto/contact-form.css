@@ -64,6 +64,11 @@
     padding-left: 20px;
 }
 
+.nav-ul a{
+    text-decoration: none;
+    color: #282d32;  
+}
+
 .nav-ul li:hover {
     background-color: rgba(34, 34, 34, 0.25);
 }

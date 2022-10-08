@@ -46,40 +46,40 @@
 </header>
 
 
-<form action="mailto:belennavarro780@gmail.com" method="post" enctype="text/plain"></form>
 <fieldset>
-<div class="fcf-body">
+<div class="fcf-body" >
 
     <div id="fcf-form">
     <h3 class="fcf-h3">Contáctanos!</h3>
 <br>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+    <form id="fcf-form-id" class="fcf-form-class" action="https://formspree.io/f/mzbwvpzv"
+    method="POST">
      <p> Rellene el siguiente formulario y nos pondremos en contacto con usted lo antes posible.</p>
         <br>
         <div class="fcf-form-group">
             <label for="Nombre" class="fcf-label">Nombre y Apellido</label>
             <div class="fcf-input-group">
-                <input type="text" id="Nombre" name="Nombre" class="fcf-form-control" required>
+                <input type="text" id="nombre" name="Nombre" class="fcf-form-control" >
             </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Email" class="fcf-label">Dirección de E-mail</label>
             <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                <input type="email" id="email" name="Email" class="fcf-form-control">
             </div>
 
             <div class="fcf-form-group">
                 <label for="Asunto" class="fcf-label">Asunto</label>
                 <div class="fcf-input-group">
-                    <input type="Asunto" id="Asunto" name="Asunto" class="fcf-form-control" required>
+                    <input type="Asunto" id="asunto" name="Asunto" class="fcf-form-control" >
                 </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Mensaje" class="fcf-label">Mensaje</label>
             <div class="fcf-input-group">
-                <textarea id="Mensaje" name="Mensaje" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                <textarea id="mensaje" name="Mensaje" class="fcf-form-control" rows="6" maxlength="3000" ></textarea>
             </div>
             <br>
             <input type="radio" name="Newsletter" value="5"> Suscribirme al Newsletter
@@ -87,7 +87,7 @@
 
         <div class="fcf-form-group">
             <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar</button>
-            <button type="delete" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Borrar</button>
+            <button type="delete" id="fcf-button-delete" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Borrar</button>
         </div>
 
 
@@ -95,7 +95,7 @@
     </div>
 
 </div>
-<div>
+<div >
     <h4>Nuestra Oficina</h4>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5433382589927!2d-58.392806584252625!3d-34.61570736564083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccade90b723ef%3A0x726f518b085fc736!2sM%C3%A9xico%201714%2C%20C1100ACD%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sde!4v1663269922488!5m2!1ses-419!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
@@ -126,6 +126,6 @@
         </div>
     </footer>
 </div>
-
+<script src="formulario.js"></script>
 </body>
 </html>

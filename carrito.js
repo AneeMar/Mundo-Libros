@@ -1,3 +1,4 @@
+
 const agregarTodoBoton = document.querySelectorAll(".btn-agregar");
 agregarTodoBoton.forEach((agregarBotonUnico) => {
   agregarBotonUnico.addEventListener("click", agregarItemClickeado);
@@ -10,6 +11,7 @@ const carritoContenedorItems = document.querySelector(".container-items");
 
 
 function agregarItemClickeado(event) {
+  alert("Se agregó un producto al carrito")
   const botonClickeado = event.target;
   const item = botonClickeado.closest(".card-book");
   const itemTitulo = item.querySelector(".titulo-libro").textContent;
@@ -21,7 +23,7 @@ function agregarItemClickeado(event) {
   const itemPrecio = item.querySelector(".precio-libro").textContent;
   console.log(itemPrecio)
 
-  agregarItemAlCarrito(itemImagen, itemPrecio, itemTitulo)
+  agregarItemAlCarrito(itemImagen, itemPrecio, itemTitulo);
 };
 
 function agregarItemAlCarrito(itemImagen, itemPrecio, itemTitulo) {
@@ -42,15 +44,17 @@ function agregarItemAlCarrito(itemImagen, itemPrecio, itemTitulo) {
   const contenidoCarrito = `
     
 <div class="shoppingCartItem">
-  <div>
+  <div class="col-titulo">
     <img src=${itemImagen} style="height: 50px;">
     <p class="titulo">${itemTitulo}</p>
   </div>
-  <div>
+  <div class="col-precio">
     <p class="shoppingCartItemPrice ">${itemPrecio}</p>
   </div>
-  <div>
+  <div class="col-cantidad">
     <input type="number" class="cantidadLibros" min="1" value="1">
+  </div>
+  <div class="col-borrar">
     <button class="btn-borrar">X</button>
   </div>
 </div>
