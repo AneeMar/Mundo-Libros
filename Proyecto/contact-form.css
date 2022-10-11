@@ -257,7 +257,9 @@ p{
 line-height: 2.3;
 }
 
-    
+.wrapper iframe{
+    padding-left: 150px;
+}
 
 iframe {
     padding-top: 10px;
@@ -271,7 +273,7 @@ h4{
         padding-left: 500px;
 }
 h5{
-    padding-left: 530px;
+    padding-left: 450px;
     padding-top: 15px;
     padding-bottom: 0px;
     font-size: 25px;
