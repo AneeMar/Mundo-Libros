@@ -248,10 +248,10 @@ h1 {
 
 }
 h2{
-    padding-left: 100px;
+    padding-left: 55px;
 }
 p{
-    padding-left: 100px;
+    padding-left: 40px;
     padding-right: 100px;
     text-align: justify;
 line-height: 2.3;
@@ -260,20 +260,24 @@ line-height: 2.3;
     
 
 iframe {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 700px;
+    height:400px;
 
 }
 h4{
         padding-top: 20px;
         padding-left: 500px;
 }
-iframe{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 280px;
+h5{
+    padding-left: 530px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 .pie-pagina {
     width: 100%;
     background-color: #000;
@@ -282,7 +286,7 @@ iframe{
     width: 100%;
     max-width: 1200px;
     margin:auto;
-    padding: 40px 0px;
+    padding: 10px 0px;
     align-content: center;
 }
 .pie-pagina .grupo-1 .box figure {
@@ -293,8 +297,8 @@ iframe{
     align-items: center;
 }
 .pie-pagina .grupo-1 .box figure img{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
 }
 .pie-pagina .grupo-1 .box h3{
     color: #fff;
@@ -305,13 +309,8 @@ iframe{
     padding: auto;
     justify-content: center;
     padding-left: 0.5px;
+    text-decoration:none;
 
-}
-
-.pie-pagina .grupo-1 .box h5{
-color: #545b62;
-font-size: 20px;
-text-align: center;
 }
 
 .pie-pagina .grupo-1 .box p{
