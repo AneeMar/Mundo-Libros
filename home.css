@@ -2,7 +2,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 70px 400px auto auto auto 200px;
+    grid-template-rows: 70px 400px auto auto auto auto;
 }
 
 .header {
@@ -78,11 +78,8 @@ body {
     padding-left: 20px;
 }
 
-a{
-    text-decoration: none;
-}
-
 .nav-ul a{
+    text-decoration: none;
    color: #282d32;
 }
 
@@ -214,18 +211,6 @@ a{
     
 }
 
-
-.button-categoria{
-    text-decoration: none;
-    width: 150px;
-    height: 30px;
-    margin-top: 20px;
-    color:#ffffff;
-    font-weight: 100;
-    background-color: #282d32;
-
-}
-
 .catalogo {
     grid-column: 1/4;
     grid-row: 2/5;
@@ -267,7 +252,9 @@ a{
     text-align: justify;
 }
 
-.catalogo .btn-agregar{
+.catalogo .btn-agregar , #btn-categoria, #btn-categoria a {
+    text-decoration-style: none;
+    text-decoration-line: none;
     width: 150px;
     margin-top: 20px;
     background-color: black;
@@ -309,8 +296,93 @@ a{
 }
 
 .cantidadLibros{
-    width: 35px;
+    width: 50px;
     margin-top: 20px;
+}
+
+
+.pie-pagina {
+    margin-top: 50px;
+    grid-column: 1/4;
+    grid-row: 6/7;
+    width: 100%;
+    background-color: #000;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+}
+.pie-pagina .grupo-1 {
+
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0px;
+    align-content: center;
+}
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+    height: 150px;
+}
+.pie-pagina .grupo-1 .box h3{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align:justify;
+    font-family: 'Courier New', Courier, monospace;
+    padding: auto;
+    justify-content: center;
+    padding-left: 0.5px;
+    text-decoration: none;
+
+}
+
+.pie-pagina .grupo-1 .box p{
+    color:#efefef;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.red-social{
+    justify-content: center;
+    display: flex;
+    padding-left: 30px;
+}
+
+.red-social a{
+    text-decoration: none;
+    color: #fff;
+    transition:all 300ms ease;
+    padding-left: 10px;
+}
+
+
+.box .red-social a:hover{
+    color:#ced4da;
+    align-items: center;
+}
+.pie-pagina .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color:#545b62;
+}
+.pie-pagina .grupo-2 small{
+    color: #545b62;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align:justify;
+    font-family: 'Courier New', Courier, monospace;
+    padding: auto;
+    justify-content: center;
+    padding-left: 0.5px;
+
 }
 
 @media (max-width: 768px) {
@@ -330,7 +402,7 @@ a{
         align-items: center;
     }
 
-    .button-categoria {
+    .button-categoria #btn-categoria {
         margin-top: 10px;
     }
 
@@ -393,77 +465,6 @@ a{
         font-size: 16px;
     }
 
-.pie-pagina {
-    width: 100%;
-    background-color: #000;
-}
-.pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    margin:auto;
-    padding: 10px 0px;
-    align-content: center;
-}
-.pie-pagina .grupo-1 .box figure {
-    width: 100%;
-    height:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img{
-    width: 150px;
-    height: 150px;
-}
-.pie-pagina .grupo-1 .box h3{
-    color: #fff;
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align:justify;
-    font-family: 'Courier New', Courier, monospace;
-    padding: auto;
-    justify-content: center;
-    padding-left: 0.5px;
-    text-decoration: none;
-
-}
-
-.pie-pagina .grupo-1 .box p{
-    color:#efefef;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.pagina-pie .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 10px;
-    text-align:center;
-    transition:all 300ms ease;
-    align-items: center;
-   
-}
-.box .red-social a:hover{
-    color:#ced4da;
-    align-items: center;
-}
-.pie-pagina .grupo-2{
-    padding: 15px 10px;
-    text-align: center;
-    color:#545b62;
-}
-.pie-pagina .grupo-2 small{
-    color: #545b62;
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align:justify;
-    font-family: 'Courier New', Courier, monospace;
-    padding: auto;
-    justify-content: center;
-    padding-left: 0.5px;
-
-}
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
         width: 100%;
@@ -474,4 +475,4 @@ a{
 .typewriter h1{
     font-size: 14px;
 }
-} 
+} }

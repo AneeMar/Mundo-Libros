@@ -8,10 +8,10 @@ const botonComprar = document.querySelector(".btn-comprar");
 botonComprar.addEventListener("click", comprarClickeado);
 
 const carritoContenedorItems = document.querySelector(".container-items");
-
+inicializar();
 
 function agregarItemClickeado(event) {
-  alert("Se agregó un producto al carrito")
+  alert("Se agregó un producto al carrito");
   const botonClickeado = event.target;
   const item = botonClickeado.closest(".card-book");
   const itemTitulo = item.querySelector(".titulo-libro").textContent;
@@ -19,15 +19,14 @@ function agregarItemClickeado(event) {
 
   const itemImagen = item.querySelector(".img-libro").src;
 
-  console.log(itemImagen)
+  console.log(itemImagen);
   const itemPrecio = item.querySelector(".precio-libro").textContent;
-  console.log(itemPrecio)
+  console.log(itemPrecio);
 
   agregarItemAlCarrito(itemImagen, itemPrecio, itemTitulo);
 };
 
 function agregarItemAlCarrito(itemImagen, itemPrecio, itemTitulo) {
-
   const elementosTitulos = carritoContenedorItems.getElementsByClassName("titulo");
   for (i = 0; i < elementosTitulos.length; i++) {
     if (elementosTitulos[i].innerHTML === itemTitulo) {
@@ -37,6 +36,7 @@ function agregarItemAlCarrito(itemImagen, itemPrecio, itemTitulo) {
       precioTotal();
       return;
     }
+
   };
 
 
@@ -80,13 +80,15 @@ function precioTotal() {
 
     const cantidadLibrosElement = shoppingCartItem.querySelector(".cantidadLibros");
     const cantidadLibros = parseInt(cantidadLibrosElement.value);
+    console.log(cantidadLibros);
 
     total = total + shoppingCartItemPrice * cantidadLibros;
-    console.log(total)
+    console.log(total);
   });
-
   totalBox.innerHTML = `${total.toFixed(2)}$`;
 }
+
+
 
 function borrarfilaCarrito(event) {
   const botonClickeado = event.target;
@@ -97,12 +99,16 @@ function borrarfilaCarrito(event) {
 function cambiarCantidadLibros(event) {
   const input = event.target;
   precioTotal();
-
 }
 
 function comprarClickeado() {
+  carritoContenedorItems.innerHTML = "";
+  precioTotal();
   alert("¡Gracias por su compra! El pedido se envia, una vez recibido el comprobante de pago al mail de contacto.");
+
+}
+
+function inicializar() {
   carritoContenedorItems.innerHTML = "";
   precioTotal();
 }
-
